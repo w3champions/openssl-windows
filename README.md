@@ -19,10 +19,9 @@ itself can't be cross-built MSVC from Linux, so we extract the prebuilt static l
 
 ## Layout
 
-| | |
-|---|---|
-| Release tag | the OpenSSL version, e.g. `3.6.3` |
-| Asset | `Win64OpenSSL-<version, `.`→`_`>.msi`, e.g. `Win64OpenSSL-3_6_3.msi` |
+- **Release tag** — the OpenSSL version (e.g. `3.6.3`).
+- **Asset** — slproweb's original filename, with `.` replaced by `_`
+  (e.g. `Win64OpenSSL-3_6_3.msi`).
 
 Consumed by `nix/packages/openssl-windows.nix` in
 [w3champions/launcher-e](https://github.com/w3champions/launcher-e).
